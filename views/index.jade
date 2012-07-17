@@ -1,2 +1,27 @@
-h1= title
-p Welcome to #{title}
+.container
+    #header
+        h1= title
+        p Welcome to #{title}
+    #content
+        .new-item
+            form.form-horizontal
+                .control-group
+                    label.control-label title
+                    .controls
+                        input.J-new-title
+                .control-group
+                    label.control-label desc
+                    .controls 
+                        textarea.J-new-desc
+                .form-actions
+                    input.J-add-item.btn(type='submit')
+        .item-list
+            .tool-bar toolbar
+            ul.list
+
+    script#item-tpl(type='text/html').
+        <li class="item" data-uuid="{{uuid}}">
+            <div class="title"><h3>{{title}}</h3><a class="remove-item label label-important" href="#">delete</a></div>
+            <div class="desc">{{desc}}</div>
+        </li>
+                        

@@ -1,8 +1,16 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+#header {
+    margin: 20px 0 40px 20px;
 }
 
-a {
-  color: #00B7FF;
+.remove-item {
+    margin-left: 20px;
+    float: right;
+}
+
+.item-list .title h3 {
+    float: left;
+}
+
+.item-list .desc {
+    clear: both;
 }
